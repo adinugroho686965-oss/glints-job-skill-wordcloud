@@ -1,2 +1,2 @@
 # glints-job-skill-wordcloud
-A PyQt6-based desktop application that extracts job listing data and generates an interactive word cloud visualization to identify the most in-demand skills in the job market.
+This tool extracts text data from job pages (via cookies + URL), processes skill frequency, and visualizes the results in a zoomable, draggable word cloud.
