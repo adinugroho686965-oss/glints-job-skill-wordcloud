@@ -24,7 +24,7 @@ def get_skill(payload,raw_cookies,max_data):
 
     jobs = []
     max_data = int(max_data/30)
-    if max_data < 30:max_data = 1
+    if max_data < 1:max_data = 1
     for x in range(max_data):
         payload["variables"]['page'] = x+1      
         response = requests.post(url, headers=headers, json=payload  ,impersonate="firefox",).json()
@@ -46,6 +46,7 @@ def count_frequency_word(word_list):
     word_list_counted = Counter(word_list)
 
     return word_list_counted
+
 
 
 
